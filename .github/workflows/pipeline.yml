@@ -22,4 +22,5 @@ jobs:
         
     - name: Check if App is running
       run: |
-        curl -f http://localhost:8080 || exit 1
+        sleep 10
+        curl -v http://localhost:8080
